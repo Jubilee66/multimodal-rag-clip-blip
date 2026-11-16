@@ -1,0 +1,23 @@
+Text Database:
+step1_ingest_all1.py
+↓
+step2_chunk_documents2.py
+↓
+step4_Better_Embeddings6.py
+
+
+Image Database
+step6_phase1_extract_images.py
+↓
+step7_phase2_generate_image_embeddings.py
+↓
+step8_phase3_store_image_embeddings.py
+
+#________________________________________________________
+Why Two Different Databases?
+
+=>Using two different embedding models.
+Text=all-MiniLM-L6-v2
+    =produces:384-dimensional vectors
+Image=clip-ViT-B-32
+    =produces:512-dimensional vectors
